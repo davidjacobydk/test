@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/61d207148114bd4018605d0e
+
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Gaurav Vohra",
+    "subscribedToChannel" : "Disney+"
+}
+
+###
+DELETE http://localhost:3000/subscribers/61d206ca8114bd4018605cfe
+
+###
+PATCH http://localhost:3000/subscribers/61d207148114bd4018605d0e
+Content-Type: application/json
+
+{
+    "name" : "David Jacoby",
+    "subscribedToChannel" : "HEST"
+}
